@@ -1,0 +1,14 @@
+[Unit]
+Description=Security: Ajax hub mon station fake
+After=syslog.target network.target
+
+[Service]
+User=smarthome
+Group=smarthome
+WorkingDirectory=/etc/smarthome/ajax
+ExecStart=/etc/smarthome/ajax/ajax_service.pl -c /etc/smarthome/ajax/ajax_service.config
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

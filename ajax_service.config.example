@@ -1,0 +1,8 @@
+$o{ 'port' } = <port number>;
+$o{ 'host' } = 'x.x.x.x'; # IP only!
+$o{ 'log file' } = '/var/log/smarthome/ajax-mon.log';
+$o{ 'error recovery time' } = 300; # seconds to try on
+$o{ 'whine email' } = 'someone@somewhere';
+#todo?: $o{ 'allowed client' } = [ 'x.x.x.x', '' ]; # IP, MAC
+#todo?: $o{ 'forward' } = [ 'x.x.x.x', <port number> ]; # also forward to IP, port
+
